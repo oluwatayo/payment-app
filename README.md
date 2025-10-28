@@ -3,7 +3,7 @@
 A Kotlin Multiplatform Mobile (KMM) sample implementing a Payments flow with API calls via **Ktor** and JSON parsing via **kotlinx.serialization**. Includes JMeter load testing for **5 concurrent users** on `/payments` and unit tests verifying **API response parsing in the shared module**.
 
 ## App Demo Recording
-https://github.com/oluwatayo/payment-app/blob/main/Screen_recording_20251029_000739.mp4?raw=true
+<video src="https://github.com/oluwatayo/payment-app/blob/main/Screen_recording_20251029_000739.mp4" width="640" height="360" controls></video>
 
 ## Tech Stack
 - **KMM**: shared code in Kotlin across Android/iOS
