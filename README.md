@@ -16,7 +16,8 @@ A Kotlin Multiplatform Mobile (KMM) sample implementing a Payments flow with API
 - The **expect/actual** pattern is used for platform-specific logic, such as HTTP client engines (OkHttp for Android, Darwin for iOS).
 - The **testing approach** uses **Ktor MockEngine** for unit tests in the shared module to validate parsing and network logic.
 
-```mermaid
+```
+mermaid
 graph LR
     Android[Android (Jetpack Compose)]
     iOS[iOS (SwiftUI / Native UI)]
