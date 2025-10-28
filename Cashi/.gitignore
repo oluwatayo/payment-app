@@ -1,0 +1,105 @@
+*.iml
+.kotlin
+.gradle
+**/build/
+xcuserdata
+!src/**/build/
+local.properties
+.idea
+.DS_Store
+captures
+.externalNativeBuild
+.cxx
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcodeproj/project.xcworkspace/
+!*.xcworkspace/contents.xcworkspacedata
+**/xcshareddata/WorkspaceSettings.xcsettings
+node_modules/
+
+# Kotlin/Java
+*.class
+*.jar
+*.war
+*.ear
+*.iml
+*.ipr
+*.iws
+*.kts~
+*.log
+
+# Gradle
+.gradle/
+build/
+out/
+!gradle/wrapper/gradle-wrapper.jar
+.gradle/
+.idea/
+.gradle/
+local.properties
+
+# Android Studio
+.idea/
+*.iml
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.ap_ 
+*.dex
+*.class
+*.so
+*.dll
+*.exe
+*.log
+*.keystore
+*.jks
+
+# Kotlin Multiplatform build outputs
+build/
+bin/
+obj/
+out/
+*.klib
+*.kotlin_module
+*.dSYM/
+xcuserdata/
+DerivedData/
+
+# iOS (Xcode)
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+*.xcworkspace/
+!*.xcworkspace/contents.xcworkspacedata
+xcuserdata/
+DerivedData/
+Pods/
+.framework/
+.dSYM/
+
+# Compose Desktop
+*.app/
+*.dmg/
+*.pkg/
+
+# JVM Test artifacts
+test-results/
+*.junit.xml
+
+# Misc
+*.swp
+*.tmp
+*.bak
+*.orig
+*.rej
+
+# Environment files
+.env
+.env.local
+
+# MacOS
+.DS_Store
+.AppleDouble
+.LSOverride
