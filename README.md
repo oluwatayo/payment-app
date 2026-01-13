@@ -1,4 +1,4 @@
-# Cashi
+# SendToo
 
 A Kotlin Multiplatform Mobile (KMM) sample implementing a Payments flow with API calls via **Ktor** and JSON parsing via **kotlinx.serialization**. Includes JMeter load testing for **5 concurrent users** on `/payments` and unit tests verifying **API response parsing in the shared module**.
 
@@ -35,18 +35,18 @@ graph LR
 
 ## Project Layout (detected)
 **Modules / Gradle files**
-- `Cashi/build.gradle.kts`
-- `Cashi/composeApp/build.gradle.kts`
-- `Cashi/settings.gradle.kts`
+- `SendToo/build.gradle.kts`
+- `SendToo/composeApp/build.gradle.kts`
+- `SendToo/settings.gradle.kts`
 
 **tests**
-- `Cashi/composeApp/src/jvmTest/kotlin/com/example/cashi/appium/PaymentFlowTest.kt`
-- `Cashi/composeApp/src/jvmTest/kotlin/com/example/cashi/data/network/KtorHttpClientTestConfig.kt`
-- `Cashi/composeApp/src/jvmTest/kotlin/com/example/cashi/data/network/PaymentServiceTest.kt`
-- `Cashi/composeApp/src/jvmTest/kotlin/com/example/cashi/test/TransactionRepositoryImplTest.kt`
-- `Cashi/composeApp/src/jvmTest/kotlin/com/example/cashi/test/ValidatorTest.kt`
-- `Cashi/composeApp/src/jvmTest/kotlin/com/example/cashi/bdd/Cucumber/CucumberLauncher.kt`
-- `Cashi/composeApp/src/jvmTest/kotlin/com/example/cashi/appium/PaymentFlowTest.kt`
+- `SendToo/composeApp/src/jvmTest/kotlin/com/example/SendToo/appium/PaymentFlowTest.kt`
+- `SendToo/composeApp/src/jvmTest/kotlin/com/example/SendToo/data/network/KtorHttpClientTestConfig.kt`
+- `SendToo/composeApp/src/jvmTest/kotlin/com/example/SendToo/data/network/PaymentServiceTest.kt`
+- `SendToo/composeApp/src/jvmTest/kotlin/com/example/SendToo/test/TransactionRepositoryImplTest.kt`
+- `SendToo/composeApp/src/jvmTest/kotlin/com/example/SendToo/test/ValidatorTest.kt`
+- `SendToo/composeApp/src/jvmTest/kotlin/com/example/SendToo/bdd/Cucumber/CucumberLauncher.kt`
+- `SendToo/composeApp/src/jvmTest/kotlin/com/example/SendToo/appium/PaymentFlowTest.kt`
 
 ## Local Development
 
@@ -111,7 +111,7 @@ Assertions expect HTTP **201** and record latency percentiles.
 ## How to Run Parsing Tests Only
 Parsing tests use Ktor **MockEngine**. Example:
 ```bash
-./gradlew :composeApp:jvmTest --tests "com.example.cashi.data.network.PaymentServiceTest"
+./gradlew :composeApp:jvmTest --tests "com.example.SendToo.data.network.PaymentServiceTest"
 ```
 
 ## Setup (Android Studio + Firebase)
@@ -144,21 +144,21 @@ To enable Firebase services (Analytics, Crashlytics, etc.):
 1. **Create a Firebase project**  
    - Go to [Firebase Console](https://console.firebase.google.com/) and create a new project (or use an existing one).
 2. **Register your Android app**  
-   - Enter your app's package name (e.g., `com.example.cashi`).
+   - Enter your app's package name (e.g., `com.example.SendToo`).
    - Download the generated `google-services.json` file.
 3. **Place `google-services.json`**  
    - Move the file to:  
      ```
-     Cashi/composeApp/src/androidMain/google-services.json
+     SendToo/composeApp/src/androidMain/google-services.json
      ```
 4. **Enable the Google Services plugin**  
-   - In `Cashi/composeApp/build.gradle.kts`, ensure you have:
+   - In `SendToo/composeApp/build.gradle.kts`, ensure you have:
      ```kotlin
      plugins {
          id("com.google.gms.google-services")
      }
      ```
-   - And at the root `Cashi/build.gradle.kts`:
+   - And at the root `SendToo/build.gradle.kts`:
      ```kotlin
      dependencies {
          classpath("com.google.gms:google-services:4.3.15") // or latest

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "994393924773",
+    "project_id": "cashi-f4f79",
+    "storage_bucket": "cashi-f4f79.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:994393924773:android:a3033b18d50f0ddf3fd94c",
+        "android_client_info": {
+          "package_name": "com.example.sendtoo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7DXxGcA93kUICWDpQCAhk0Fm4uMnA3cI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
